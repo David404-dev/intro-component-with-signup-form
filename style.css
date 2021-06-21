@@ -1,0 +1,155 @@
+/* MOBILE */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --darkblue: hsl(249, 10%, 26%);
+  --grayishblue: hsl(246, 25%, 77%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  background-image: url(./images/bg-intro-mobile.png);
+  background-color: var(--red);
+  color: white;
+}
+
+.container {
+  width: 80%;
+  margin: 1em auto 0 auto;
+}
+
+.title-p {
+  margin-bottom: 4em;
+}
+
+.top-btn {
+  padding: 2em 2em;
+  border-radius: 10px;
+  background-color: var(--blue);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+}
+
+.top-btn:hover,
+.top-btn:focus {
+  background-color: rebeccapurple;
+  transition: background-color 250ms ease;
+}
+
+.top-btn span {
+  font-weight: 400;
+}
+
+form {
+  position: relative;
+  width: 80%;
+  margin: 1.5em auto 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  padding-top: 1.5em;
+}
+
+input {
+  margin: 0 auto 1em auto;
+  padding: 1em 3.5em 1em 1em;
+  border-radius: 10px;
+  border: 1px solid lightslategray;
+}
+
+::placeholder {
+  font-weight: 600;
+}
+
+.bottom-btn {
+  background-color: var(--green);
+  color: white;
+  padding: 1em 2.5em;
+  border-radius: 10px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.bottom-btn:hover,
+.bottom-btn:focus {
+  background-color: green;
+  transition: background-color 250ms ease;
+}
+
+.bottom-p {
+  color: var(--grayishblue);
+  font-size: 0.8rem;
+}
+
+.bottom-p span {
+  color: var(--red);
+  font-weight: 700;
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 900px) {
+  .container {
+    display: flex;
+
+    margin: 10em auto 0 auto;
+  }
+
+  .desktop-left {
+    width: 50%;
+  }
+
+  .title {
+    margin-top: 3em;
+    font-size: 2.5rem;
+    width: 50%;
+    margin-left: 5em;
+  }
+
+  .title-p {
+    width: 50%;
+    margin-left: 12em;
+    font-size: 1rem;
+  }
+
+  .desktop-right {
+    width: 50%;
+  }
+
+  .top-btn {
+    padding: 1.5em 10em;
+    font-size: 1rem;
+  }
+
+  form {
+    padding: 3em 0;
+  }
+
+  input {
+    padding: 1.2em 12em 1.2em 2em;
+  }
+
+  .bottom-btn {
+    padding: 1em 7em;
+  }
+}
